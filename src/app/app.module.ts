@@ -1,3 +1,4 @@
+import { SLOptions } from './../pages/shopping-list/sl-otpions/sl-options';
 import { AuthService } from './../services/auth.service';
 import { SignupPage } from './../pages/signup/signup';
 import { SigninPage } from './../pages/signin/signin';
@@ -16,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,14 @@ import { MyApp } from './app.component';
     EditRecipePage,
     RecipePage,
     SigninPage,
-    SignupPage
+    SignupPage,
+    SLOptions
 
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,7 +46,8 @@ import { MyApp } from './app.component';
     EditRecipePage,
     RecipePage,
     SigninPage,
-    SignupPage
+    SignupPage,
+    SLOptions
   ],
   providers: [
     StatusBar,
@@ -50,7 +55,7 @@ import { MyApp } from './app.component';
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     ShoppingListService,
     RecipesService,
-    AuthService
+    AuthService    
   ]
 })
 export class AppModule { }

@@ -1,13 +1,14 @@
 import { AuthService } from './../services/auth.service';
 import { SignupPage } from './../pages/signup/signup';
 import { SigninPage } from './../pages/signin/signin';
-import { RecipePage } from './../pages/recipe/recipe';
 import { TabsPage } from './../pages/tabs/tabs';
 import { Component, ViewChild } from '@angular/core';
 import { Platform, NavController, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import firebase from "firebase";
+
+import {  } from "";
 
 @Component({
   templateUrl: 'app.html'

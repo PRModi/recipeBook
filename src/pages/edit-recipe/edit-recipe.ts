@@ -115,7 +115,7 @@ export class EditRecipePage implements OnInit {
     alert.present()
   }
 
-  private onManageIngredients() {
+   onManageIngredients() {
     let actionSheet = this.asController.create({
       title: "What do you want to do ?",
       buttons: [

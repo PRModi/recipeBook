@@ -1,7 +1,7 @@
 import { RecepiesPage } from './../recepies/recepies';
 import { ShoppingListPage } from './../shopping-list/shopping-list';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({

@@ -1,7 +1,7 @@
 import { AuthService } from './../../services/auth.service';
 import { NgForm } from '@angular/forms/forms';
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
+import { IonicPage, LoadingController, AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
